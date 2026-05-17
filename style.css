@@ -42,6 +42,7 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 25px;
+    flex-wrap: wrap;
 }
 /* NAV BUTTON */
 
@@ -473,6 +474,7 @@ form button[type="submit"] {
     width: 100%;
 
     max-height: 400px;
+    height: auto !important;
 }
 /* SEARCH BAR */
 
@@ -536,4 +538,124 @@ form button[type="submit"] {
     color: white;
 
     border: 1px solid #555;
+}
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+    nav ul {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+
+        padding: 100px 5%;
+    }
+
+    .hero-content h2 {
+
+        font-size: 36px;
+    }
+
+    .hero-content p {
+
+        font-size: 18px;
+    }
+
+    /* FORM SECTION */
+
+    .complaint-section {
+
+        padding: 60px 5%;
+    }
+
+    .complaint-container {
+
+        padding: 25px;
+    }
+
+    /* INPUTS */
+
+    input,
+    textarea,
+    select {
+
+        font-size: 16px;
+    }
+
+    /* BUTTONS */
+
+    button {
+
+        width: 100%;
+    }
+
+    /* DASHBOARD */
+
+    .dashboard-section {
+
+        padding: 60px 5%;
+    }
+
+    #complaintContainer {
+
+        grid-template-columns: 1fr;
+    }
+
+    /* ANALYTICS */
+
+    .analytics-section {
+
+        padding: 60px 5%;
+    }
+
+    .chart-container {
+
+        padding: 20px;
+    }
+
+    /* FEATURE SECTION */
+
+    .features {
+
+        padding: 60px 5%;
+    }
+
+    .feature-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+
+    footer {
+
+        text-align: center;
+    }
+}
+/* RESPONSIVE IMAGES */
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
 }
